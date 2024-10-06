@@ -112,13 +112,23 @@
       0% { opacity: 0; transform: translateY(50px); }
       100% { opacity: 1; transform: translateY(0); }
     }
+
+    /* Wiggle effect */
+    .wiggle {
+      animation: wiggle 2s infinite; /* Adjust duration as needed */
+    }
+    @keyframes wiggle {
+      0% { transform: rotate(-5deg); }
+      50% { transform: rotate(5deg); }
+      100% { transform: rotate(-5deg); }
+    }
   </style>
 </head>
 <body>
 
   <header class="animate-in">
     <h1>Website Policies</h1>
-    <p class="cool-background">Your privacy and rights matter to us.</p>
+    <p class="cool-background wiggle">Your privacy and rights matter to us.</p>
     <nav>
       <a href="#terms">Terms of Service</a>
       <a href="#privacy">Privacy Policy</a>

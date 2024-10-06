@@ -14,8 +14,8 @@
     }
     body {
       font-family: 'Roboto', sans-serif;
-      background: linear-gradient(to top, #f0f0f0, #e0e0e0, #f0f0f0); /* Subtle background gradient */
-      color: #333;
+      background-color: #111111; /* Dark background */
+      color: #fff; /* White text */
       line-height: 1.6;
     }
     a {
@@ -68,7 +68,7 @@
       max-width: 800px;
       margin: 2rem auto;
       padding: 2rem;
-      background-color: #fff;
+      background-color: #181818; /* Slightly lighter background for section */
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       border-radius: 8px;
     }
@@ -113,14 +113,15 @@
       100% { opacity: 1; transform: translateY(0); }
     }
 
-    /* Wiggle effect */
-    .wiggle {
-      animation: wiggle 2s infinite; /* Adjust duration as needed */
+    /* Wiggle effect for individual letters */
+    .wiggle-text {
+      display: inline-block;
+      animation: wiggle 1s infinite;
     }
     @keyframes wiggle {
-      0% { transform: rotate(-5deg); }
-      50% { transform: rotate(5deg); }
-      100% { transform: rotate(-5deg); }
+      0% { transform: rotate(-2deg); }
+      50% { transform: rotate(2deg); }
+      100% { transform: rotate(-2deg); }
     }
   </style>
 </head>
@@ -128,7 +129,7 @@
 
   <header class="animate-in">
     <h1>Website Policies</h1>
-    <p class="cool-background wiggle">Your privacy and rights matter to us.</p>
+    <p class="cool-background wiggle-text">Your <span class="wiggle-text">p</span><span class="wiggle-text">r</span><span class="wiggle-text">i</span><span class="wiggle-text">v</span><span class="wiggle-text">a</span><span class="wiggle-text">c</span><span class="wiggle-text">y</span> <span class="wiggle-text">a</span><span class="wiggle-text">n</span><span class="wiggle-text">d</span> <span class="wiggle-text">r</span><span class="wiggle-text">i</span><span class="wiggle-text">g</span><span class="wiggle-text">h</span><span class="wiggle-text">t</span><span class="wiggle-text">s</span> <span class="wiggle-text">m</span><span class="wiggle-text">a</span><span class="wiggle-text">t</span><span class="wiggle-text">t</span><span class="wiggle-text">e</span><span class="wiggle-text">r</span> <span class="wiggle-text">t</span><span class="wiggle-text">o</span> <span class="wiggle-text">u</span><span class="wiggle-text">s</span><span class="wiggle-text">.</span></p>
     <nav>
       <a href="#terms">Terms of Service</a>
       <a href="#privacy">Privacy Policy</a>
@@ -159,25 +160,33 @@
     <h2>Privacy Policy</h2>
     <p>We value your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and share your information when you visit our website.</p>
     <h3>1. Information We Collect</h3>
-    <p>We may collect personal information, such as your name and email address, when you provide it to us voluntarily through forms or sign-ups.</p>
+        <p>We may collect personal information, such as your name and email address, when you register on our site, subscribe to our newsletter, or fill out a form. We also automatically collect information about your device, browsing actions, and usage patterns when you visit our website.</p>
+    
     <h3>2. How We Use Your Information</h3>
-    <p>We use the information we collect to improve your experience on our website, provide customer support, and keep you informed about new features or offers.</p>
-    <h3>3. Sharing of Information</h3>
-    <p>We do not sell or rent your personal information to third parties. However, we may share it in the following circumstances:</p>
+    <p>We use your information for various purposes, including:</p>
     <ul>
-      <li>With service providers who assist us in operating our website.</li>
-      <li>When required by law or to protect our legal rights.</li>
+      <li>To provide and maintain our website.</li>
+      <li>To notify you about changes to our website.</li>
+      <li>To allow you to participate in interactive features when you choose to do so.</li>
+      <li>To provide customer support.</li>
+      <li>To gather analysis or valuable information so that we can improve our website.</li>
+      <li>To monitor the usage of our website.</li>
+      <li>To detect, prevent and address technical issues.</li>
     </ul>
-    <h3>4. Data Security</h3>
-    <p>We take the security of your personal data seriously. However, no method of transmission over the internet is 100% secure, and we cannot guarantee its absolute security.</p>
-    <h3>5. Changes to This Policy</h3>
-    <p>We may update this privacy policy from time to time. Any changes will be posted on this page, so please check back periodically.</p>
+    
+    <h3>3. Data Security</h3>
+    <p>We take reasonable measures to protect your information from loss, theft, misuse, and unauthorized access. However, no method of transmission over the Internet or method of electronic storage is 100% secure, and we cannot guarantee its absolute security.</p>
+    
+    <h3>4. Third-Party Services</h3>
+    <p>We may employ third-party companies and services to facilitate our website ("Service Providers"), provide the website on our behalf, perform website-related services, or assist us in analyzing how our website is used. These third parties may have access to your personal data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+    
+    <h3>5. Changes to This Privacy Policy</h3>
+    <p>We may update our privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page and updating the "effective date" at the top of this privacy policy.</p>
   </section>
 
-  <footer class="animate-in">
-    <p>© 2024 Killa Devs. All rights reserved.</p>
+  <footer>
+    <p>&copy; 2024 Killa Devs. All rights reserved.</p>
     <p><a href="#terms">Terms of Service</a> | <a href="#privacy">Privacy Policy</a></p>
   </footer>
-
 </body>
 </html>
